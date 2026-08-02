@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Calculator {
 	
-@GetMapping("calculator/{operation}/{a}/{b}")
+@GetMapping("webcalc/{operation}/{a}/{b}")
 int calculation(@PathVariable String operation,@PathVariable int a,@PathVariable int b)
 {
 	if(operation.equals("add"))
